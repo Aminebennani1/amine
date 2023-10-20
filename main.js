@@ -5,6 +5,7 @@ const img = document.querySelector('img')
 var images = ['image/trois.jpg', 'image/deux.jpg', 'image/quatre.jpg', 'image/un.jpg', 'image/sis.jpg', 'image/whit.jpg', 'image/sink.jpg', 'image/naf.jpg', 'image/dis.jpg', 'image/set.jpg']
 var x = 0;
 button.addEventListener('click', next);
+
 function next() {
   if (x < images.length) {
     var droppedImage = document.querySelector('.N2 img');
@@ -13,14 +14,13 @@ function next() {
       if (x < images.length) {
         img.src = images[x];
       }
-      alert('CORRECT')
-    }
-    else {
-      alert("WRONG")
+     // alert("corect")
+    else  {
+      //alert("WRONG")
     }
   }
 }
-
+}
 function allowDrop(ev) {
   ev.preventDefault();
 }
