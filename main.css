@@ -1,0 +1,73 @@
+        
+
+        .toto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .amine,.samy {
+            display: flex;
+        }
+
+        nav {
+            background-color:rgb(14, 158, 136);
+            margin: 8px;
+            padding: 80px;
+            text-decoration: none;
+            
+        }
+        .J{
+            padding: 20px;
+        }
+        .hamid{ 
+            display: flex;
+        }
+     .N1,.N2,.N3,.N4,.N5,.N6,.N7,.N8,.N9,.N10{
+        width: 45px;
+     height: 30px;
+    padding: 10px;
+    border: 5px solid #e61e1e;
+    border-radius: 20px;
+            
+     }
+     footer div{
+       
+    background:#101011;
+    padding:20px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+     }
+     .bg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .div1 {
+        margin: 10px;
+            width: 80px;
+            height: 140px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.457);
+            border: 3px solid black;
+            border-radius: 20px;
+            margin-left:500px ;
+    }
+    .volvo{
+        text-align: center;
+        justify-content: center;
+        margin-left:531px ;
+        padding: 15px;
+         
+    }
+    .numbers{
+      width: 45px;
+      height: 30px;
+     padding: 10px;
+     border: 5px solid #e61e1e;
+     border-radius: 20px;
+    }
