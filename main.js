@@ -2,8 +2,9 @@
 const button = document.querySelector('button');
 const div = document.querySelector('.N2');
 const img = document.querySelector('img')
-var images = ['image/trois.jpg', 'image/deux.jpg', 'image/quatre.jpg', 'image/un.jpg', 'image/sis.jpg', 'image/whit.jpg', 'image/sink.jpg', 'image/naf.jpg', 'image/dis.jpg', 'image/set.jpg']
+var images = ['image/trois.jpg', 'image/deux.jpg', 'image/quatre.jpg', 'image/un.jpg', 'image/sis.jpg', 'image/whit.jpg', 'image/sink.jpg', 'image/naf.jpg', 'image/dis.jpg', 'image/set.jpg','https://www.icegif.com/wp-content/uploads/winner-icegif-3.gif']
 var x = 0;
+
 button.addEventListener('click', next);
 
 function next() {
@@ -15,8 +16,10 @@ function next() {
         img.src = images[x];
       }
      // alert("corect")
-    else  {
+    //else  {
       //alert("WRONG")
+      if (droppedImage) {
+        droppedImage.remove();
     }
   }
 }
