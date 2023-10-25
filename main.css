@@ -1,0 +1,93 @@
+
+     .N2{
+
+        width:45px;
+     height: 30px;
+    padding: 10px;
+    border: 5px solid #e61e1e;
+    border-radius: 20px;
+    margin: auto;
+
+    animation: move 0.2s infinite;
+    animation-direction:alternate-reverse;
+      perspective: 1px;
+            
+     }
+     @keyframes move {
+        from {
+          background: rgb(15, 15, 15);
+        }
+  
+        to {
+          background: rgba(195, 0, 255, 0.737);
+        }
+      }
+     
+     footer div{
+       
+    background:#3cffef;
+    padding:50px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+     border-radius: 20px;
+     }
+     
+     .div1 {
+        margin: 10px;
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.457);
+            border: 3px solid black;
+            border-radius: 20px;
+            margin:auto ;
+    }
+    .volvo{
+        text-align: center;
+        justify-content: center;
+        margin: auto ;
+        display: flex;              
+        margin-top: auto;
+        padding: 15px;
+        width:260px;
+     height: 45px;
+     border-radius: 20px;
+
+     transition:width 0.5s,height 0.5s, background-color 0.5s;
+      
+    }
+
+.volvo:hover{
+width: 270PX;
+height: 50px;
+background-color: rgba(109, 242, 109, 0.751);
+}
+
+  .numbers{
+      width: 45px;
+      height: 30px;
+     padding: 10px;
+     border: 5px solid #e61e1e;
+     border-radius: 20px;
+    }
+    .bg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    @media screen and (max-width: 500px) {
+      body{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .numbers:hover{
+      width: 50PX;
+      height: 40px;
+      background-color: rgba(109, 155, 242, 0.97);
+
+    }
