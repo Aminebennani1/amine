@@ -1,5 +1,5 @@
 
-const button = document.querySelector('button');
+const button = document.querySelector('.volvo');
 const div = document.querySelector('.N2');
 const img = document.querySelector('img')
 var images = ['image/trois.jpg', 'image/deux.jpg', 'image/quatre.jpg', 'image/un.jpg', 'image/sis.jpg', 'image/whit.jpg', 'image/sink.jpg', 'image/naf.jpg', 'image/dis.jpg', 'image/set.jpg','https://www.icegif.com/wp-content/uploads/winner-icegif-3.gif']
@@ -10,7 +10,7 @@ button.addEventListener('click', next);
 function next() {
   if (x < images.length) {
     var droppedImage = document.querySelector('.N2 img');
-    if (droppedImage.src.split("/").pop().split(".")[0].endsWith(images[x].split("/").pop().split(".")[0])) {
+    if (droppedImage.src.split("/").pop().split(".")[0].endsWith(images[x].split("/").pop().split(".")[0] )) {
       x++;
       if (x < images.length) {
         img.src = images[x];
@@ -39,3 +39,11 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
   index++
 }
+  // Sélectionnez le bouton par son ID
+  var refreshButton = document.querySelector('.refrech');
+
+  // Ajoutez un écouteur d'événement pour le clic sur le bouton
+  refreshButton.addEventListener('click', function() {
+      // Utilisez la méthode reload() de l'objet window pour recharger la page
+      window.location.reload();
+  });
